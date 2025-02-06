@@ -1,10 +1,11 @@
-"use client"
-import { useState } from "react";
+
 export const SearchBar=({Search,setSearch})=>{
    
     const handleOnSearch = (e) => {
         setSearch(e.target.value);
+        
     };
+    
     return(
        
         <div className="flex justify-center gap-2 mt-10">

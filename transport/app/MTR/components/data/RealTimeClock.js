@@ -6,9 +6,9 @@ const RealTimeClock = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentTime(new Date());
-    }, 1000); // 每秒更新一次
+    }, 1000);
 
-    return () => clearInterval(intervalId); // 清理定時器
+    return () => clearInterval(intervalId); 
   }, []);
 
   return (
